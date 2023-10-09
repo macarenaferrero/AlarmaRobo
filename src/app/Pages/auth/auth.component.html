@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tabla Didactica</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card color="medium">
+    <ion-card-content class="custom-center">
+      <form [formGroup]="loginUsuario">
+        <ion-item>
+          <ion-input class="font" type="email" fill="solid" label="CORREO ELECTRÓNICO" labelPlacement="floating"
+            helperText="INGRESE UN CORREO VÁLIDO" errorText="CORREO INVÁLIDO" ngModel formControlName="email"
+            email></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input class="font" type="Password" fill="solid" label="CONTRASEÑA" labelPlacement="floating"
+            helperText="MÍNIMO 6 CARÁCTERES" errorText="CONTRASEÑA INVÁLIDA" ngModel formControlName="pass"
+            ></ion-input>
+        </ion-item>
+        <ion-button expand="full" (click)="login()" [disabled]="loginUsuario.invalid">Aceptar</ion-button>
+      </form>
+    </ion-card-content>
+    <ion-row class="custom-margin">
+      <ion-col class="">
+        <button type="button" class="btn button-rectangular acceso mb-2" id="btnLogs" (click)="accesoRapidoPaciente1()">
+        USUARIO
+        </button>
+      </ion-col>
+      <ion-col class="">
+        <button type="button" class="btn button-rectangular acceso " id="btnLogs" (click)="accesoRapidoEspecialista1()">
+        INVITADO
+        </button>
+      </ion-col>
+      <ion-col class="">
+        <button type="button" class="btn button-rectangular acceso" id="btnLogs" (click)="accesoRapidoAdmin()">
+          ADMIN
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-card-header>
+      <img src="../../../assets/icon/alarma_nombre.png" width="70%">
+    </ion-card-header>
+  </ion-card>
+</ion-content>

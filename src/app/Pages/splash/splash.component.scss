@@ -1,0 +1,27 @@
+@-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
+@-webkit-keyframes flip-scale-2-hor-top{0%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}50%{-webkit-transform:translateY(-50%) rotateX(-90deg) scale(2);transform:translateY(-50%) rotateX(-90deg) scale(2);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}100%{-webkit-transform:translateY(-100%) rotateX(-180deg) scale(1);transform:translateY(-100%) rotateX(-180deg) scale(1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}@keyframes flip-scale-2-hor-top{0%{-webkit-transform:translateY(0) rotateX(0) scale(1);transform:translateY(0) rotateX(0) scale(1);-webkit-transform-origin:50% 0;transform-origin:50% 0}50%{-webkit-transform:translateY(-50%) rotateX(-90deg) scale(2);transform:translateY(-50%) rotateX(-90deg) scale(2);-webkit-transform-origin:50% 50%;transform-origin:50% 50%}100%{-webkit-transform:translateY(-100%) rotateX(-180deg) scale(1);transform:translateY(-100%) rotateX(-180deg) scale(1);-webkit-transform-origin:50% 100%;transform-origin:50% 100%}}
+ion-content{
+  background-image: url('../../../assets/background/3.png');
+}
+
+
+ion-content{
+  --background: none;
+}
+
+img{
+  width: 110%;
+}
+
+.custom-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+}
+
+.rotate-center{-webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both}
+.flip-scale-2-hor-top{-webkit-animation:flip-scale-2-hor-top 1s linear 2 alternate both;animation:flip-scale-2-hor-top 1s linear 2 alternate both}
+

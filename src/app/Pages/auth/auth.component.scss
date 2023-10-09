@@ -1,0 +1,137 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Fugaz One', sans-serif;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-button {
+  --background: #2c70af;
+  --background-hover: #2c70af;
+  --background-activated: #2c70af;
+  --background-focused: #2c70af;
+  --color: rgb(1, 1, 10);
+  --box-shadow: 0 2px 6px 0 rgb(0, 0, 0, 0.25);
+  --ripple-color: #2c70af;
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  margin-top: 5vh;
+  height: 10vh;
+
+}
+
+.custom-center {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  height: 45vh; /* Opcional para centrar verticalmente */
+  margin-left: 10px;
+}
+
+.button-rectangular {
+  height: auto; /* Ajusta la altura según el contenido */
+  width: 100%; /* El ancho se ajustará al 100% del contenedor */
+  padding: 10px; /* Ajusta el espaciado interno según tus preferencias */
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.button-rectangular {
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+}
+
+.button-rectangular:hover {
+  transform: scale(1.1);
+}
+
+.custom-margin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+ion-card-header{
+  display: flex;
+  flex-direction: column; /* Cambia el flujo de columnas en lugar de filas */
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0%;
+  padding-top: 0px;
+}
+
+ion-card-content{
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.button{
+
+  font-family: 'Fugaz One', sans-serif;
+}
+
+ion-card{
+  background-image: url('../../../assets/background/3.png');
+  height: 100vh;
+}
+
+
+ion-card,ion-title,ion-input, ion-button{
+  font-family: 'Waiting for the Sunrise', cursive;
+  font-size: larger;
+}
+
+ion-button{
+  font-weight: bold;
+  font-size: x-large;
+}
+.custom-toast {
+  width: 20px; /* Ancho del cuadrado */
+  height: 20px;
+}
+
+
+.acceso {
+  background-color: #2c70af; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 5vh;
+  font-family: 'Fugaz One', sans-serif;
+}
+
+.font{
+  font-family: 'Fugaz One', sans-serif;
+}
+
+

@@ -1,16 +1,24 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './Pages/auth/auth.component';
+import { SplashComponent } from './Pages/splash/splash.component';
+import { PrincipalComponent } from './Pages/principal/principal.component';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'inicio', component: AuthComponent
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'inicio',
     pathMatch: 'full'
   },
+  {
+    path: 'splash', component:SplashComponent
+  },
+  {
+    path: 'principal', component: PrincipalComponent
+  }
 ];
 
 @NgModule({

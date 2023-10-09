@@ -1,0 +1,38 @@
+<ion-content>
+
+  <BR>
+    <div *ngIf="activa">
+      <h1 class="text-center" >OPRIMA PARA DESACTIVAR</h1>
+      <ion-item class="text-center">
+        <ion-input type="password" class='font' placeholder="INGRESE SU CONTRASEÑA" [(ngModel)]='passwordIngresada'></ion-input>
+      </ion-item>
+
+      <!-- <ion-icon name="arrow-down-circle"></ion-icon> -->
+    </div>
+
+  <div class="" *ngIf="activa">
+    <div style="margin-top: 0px;">
+      <br>
+
+      <img src="../../../assets/background/prendida.png" style="margin-left: 5%;margin-right: 5%;" class="mx-auto d-block rounded-circle img-fluid border border-dark border-5"(click)="changeBloqueado()" alt="Responsive image">
+      <br>
+    </div>
+  </div>
+  <div *ngIf="!activa">
+
+    <h1 class="text-center" >OPRIMA PARA ACTIVAR</h1>
+    <!-- <ion-icon class="text-center"name="arrow-down-circle"></ion-icon> -->
+  </div>
+  <div  *ngIf="!activa">
+    <div style="margin-top: 20%;">
+      <br>
+      <img src="../../../assets/background/apagada.png" class="mx-auto d-block img-fluid rounded-circle border border-dark border-5" (click)="changeBloqueado()" alt="Responsive image">
+      <br>
+    </div>
+  </div>
+  <ion-col class="form-group">
+    <button type="button" class="btn" id="btnLogs" (click)="logOut()">
+      <img id="imgBotonesLog" src="../../../assets/background/logout.jpg">
+    </button>
+  </ion-col>
+</ion-content>

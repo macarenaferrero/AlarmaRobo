@@ -1,0 +1,41 @@
+ion-content{
+  background-image: url('../../../assets/background/3.png');
+}
+
+
+ion-content{
+  --background: none;
+}
+
+h1,ion-label,.font{
+  font-family: 'Fugaz One', sans-serif;
+  color: #2f70af;
+}
+
+h1{
+  font-size: 50px;
+}
+
+#imgBotonesLog{
+  height: 50px;
+  width: 50px;
+  display:block;
+  border-radius: 2rem;
+  background-color: rgb(255, 255, 255);
+
+}
+
+#btnLogs{
+  height: 60px;
+  width: 60px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-right:5px;
+  border-radius: 50%;
+}
+ion-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
